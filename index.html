@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GV farm foods</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&family=Rubik&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav id="navbar">
+        <img src="logo1.png" id="logo" />
+        <img src="menu.svg" alt="menu" id="menu" />
+        <ul>
+          <li><img src="cross.svg" id="cross" alt="" onclick="cancel()" /></li>
+          <li id="pricing">Pricing</li>
+          <li id="list">
+            <div class="prod">Products</div>
+            <ul>
+              <li class="hidden-nav">Crops</li>
+              <li class="hidden-nav">Vegetables</li>
+              <li class="hidden-nav">Others</li>
+            </ul>
+          </li>
+          <li id="contact">Contact</li>
+          <li id="delivery">Delivery</li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="headings">GV Foods</h1>
+        <p class="text">
+          High quality Food, directly from farm, at your doorstep.
+        </p>
+      </section>
+    </header>
+
+    <div id="secondpart">
+      <div id="product-1">
+        <img src="crop.jpg" alt="crop" class="prdouct-image" />
+        <h1 class="generalhd">Crops</h1>
+        <p class="prdouct-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+          repellat, quasi illum ipsam consectetur nam voluptatem explicabo
+          reprehenderit quos perferendis porro dolore expedita!
+        </p>
+      </div>
+      <div id="product-2">
+        <img src="vegetable.jpg" alt="vegetable" class="prdouct-image" />
+        <h1 class="generalhd">Vegetables</h1>
+        <p class="prdouct-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+          repellat, quasi illum ipsam consectetur nam voluptatem explicabo
+          reprehenderit quos perferendis porro dolore expedita!
+        </p>
+      </div>
+    </div>
+
+    <div id="sectionthree">
+      <img src="imgbg.jpg" id="deliveryimg1" alt="" />
+      <img src="delivery.jpg" id="deliveryimg" alt="" />
+
+      <div id="description">
+        <h1 id="generalhd1">Delivery</h1>
+        <p id="deldesc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nihil
+          corrupti odio expedita ea pariatur consequuntur in nisi sunt modi
+          reiciendis, sed quod dignissimos soluta? Modi nobis reiciendis
+          cupiditate blanditiis.
+        </p>
+      </div>
+    </div>
+    <div id="faq">
+      <h1 id="faqs">FAQ</h1>
+      <div class="questions" id="q">
+        <div id="box-1">
+
+          <div class="faqtext questions" id="q-1">
+            what do we do?
+            <img src="arrow.svg" class = 'btn' alt="" class="arrow" id="ar1" onclick="show1()" />
+            <img src="arrowup.svg" class = 'btn1' alt="" class="arrow" id="ar01" onclick="show01()" />
+          </div>
+          <div class="faqtext answers" id="a-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+            
+          </div>
+        </div>
+        <div id="box-2">
+
+          <div class="faqtext questions" id="q-2">
+            How we deliver?
+            <img src="arrow.svg" class = 'btn' alt="" class="arrow" id="ar2" onclick="show2()"/>
+            <img src="arrowup.svg" class = 'btn1' alt="" class="arrow" id="ar02" onclick="show02()" />
+          </div>
+          <div class="faqtext answers" id="a-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+            
+          </div>
+        </div>
+        <div id="box-3">
+
+          <div class="faqtext questions" id="q-3">
+            How healthy our products are?
+            <img src="arrow.svg" class = 'btn' alt="" class="arrow" id="ar3" onclick="show3()"/>
+            <img src="arrowup.svg" class = 'btn1' alt="" class="arrow" id="ar03" onclick="show03()" />
+          </div>
+          <div class="faqtext answers" id="a-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1 id="contact">CONTACT US</h1>
+      <p class="foottext">+91xxxxxxx</p>
+      <p class="foottext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, harum!</p>
+      <div class= 'icons' id="icons">
+        <img class = 'svgicons' src="instagram.svg" alt="">
+        <img class = 'svgicons' src="gmail.svg" alt="">
+        <img class = 'svgicons' src="facebook.svg" alt="">
+        <img class = 'svgicons' src="twitter.svg" alt="">
+      </div>
+    </div>
+    <div class="bottomfooter">
+      <p>SITE BY &nbsp; &copy; &nbsp; KAVYA SHARMA</p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
