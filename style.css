@@ -1,0 +1,371 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  /* box-sizing: border-box; */
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+/* Styling of the header  */
+#logo {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 1em;
+  grid-area: logo;
+}
+#cross {
+  display: none;
+}
+.header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+#pricing {
+  grid-area: pricing;
+}
+#contact {
+  grid-area: contact;
+}
+#list {
+  grid-area: list;
+  position: relative;
+}
+#delivery {
+  grid-area: delivery;
+}
+#navbar {
+  /* box-sizing: border-box; */
+  /* position: sticky; */
+  top: 0;
+  display: flex;
+}
+#navbar ul {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "logom . . pricing list contact delivery";
+  width: 100%;
+}
+#navbar ul > li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin: 0.7rem;
+  font-weight: bolder;
+  padding: 1rem;
+  cursor: pointer;
+}
+/* #navbar ul li:hover{
+    transform: scale(1.1);
+} */
+
+/* .hidden-nav{
+    display: none;
+    margin: 0%;
+    padding: 0%;
+} */
+header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3.5rem;
+}
+#headings {
+  font-size: 3rem;
+  margin: 1.2rem;
+  /* margin-bottom: 1.2em; */
+  font-weight: bolder;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+#dropdownar{
+  display: none;
+}
+#dropdownarup{
+  display: none;
+}
+
+.header::before {
+  content: "";
+  background: url("bg4.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+/* #list:hover > .hidden-nav{
+    display: block;
+    background: wheat;
+    color: black;
+    z-index: 2;
+    position: absolute;
+} */
+#navbar ul ul {
+  background-color: rgb(66, 51, 32);
+  position: absolute;
+  top: 3rem;
+  display: none;
+  color: white;
+  
+}
+#navbar ul li:hover > ul {
+  display: block;
+}
+#navbar ul ul li {
+  font-weight: lighter;
+  margin: 0;
+}
+
+#navbar ul ul li:hover {
+  background-color: rgb(255, 140, 45);
+  color: rgb(0, 0, 0);
+}
+
+#navbar > ul > li:hover {
+  color: black;
+}
+
+@media only screen and (min-width: 800px) {
+  .header {
+    width: 100%;
+  }
+}
+.prod:hover {
+  color: black;
+}
+
+#menu {
+  display: none;
+  margin: 1.2rem;
+  padding: 1.2rem;
+  position: absolute;
+  right: 1rem;
+}
+@media only screen and (max-width: 950px) {
+  #navbar ul {
+    display: none;
+  }
+  #dropdownar{
+    display: block
+  }
+
+  #menu {
+    display: block;
+  }
+  #headings {
+    margin-top: 1.4rem;
+  }
+  #navbar ul {
+    position: absolute;
+    /* top: 1rem; */
+    /* right: 0.09rem; */
+    /* opacity: 0.9; */
+    background-color: rgb(255, 208, 1, 0.9);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 20px;
+  }
+  #navbar ul ul{
+    background-color: transparent;
+  }
+
+  #header {
+    height: 100vh;
+  }
+  #navbar ul li:hover > ul {
+    /* display: flex;
+    flex-direction: column; */
+    /* background-color: rgb(255, 208, 1, 0.9); */
+    background-color: transparent;
+    position: relative;
+    height: auto;
+    margin-top: 0;
+    padding-top: 0;
+    top: 1.5rem;
+  }
+  #prod {
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+  #navbar ul li:hover {
+    color: black;
+  }
+  #navbar ul ul li:hover {
+    color: black;
+    background-color: transparent;
+  }
+}
+@media (max-width: 420px) {
+  #headings {
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 350px) {
+  #headings {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 951px) {
+  #navbar ul {
+    display: grid;
+    grid-template-areas: "logom . . pricing list contact delivery";
+  }
+}
+#product-1 > img {
+  height: 13rem;
+  width: 17rem;
+}
+#product-2 > img {
+  height: 13rem;
+  width: 17rem;
+}
+#product-1 > p {
+  color: black;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif;
+  margin: 1.1rem;
+}
+#product-2 > p {
+  color: black;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif;
+  margin: 1.1rem;
+}
+#product-1 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem;
+  padding: 1.1rem;
+  z-index: 1;
+  width: 25vw;
+  height: auto;
+  /* position: relative; */
+
+  background-color: white;
+  box-shadow: 2px 2px 10px rgb(247, 203, 122);
+}
+#product-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem;
+  padding: 1.1rem;
+  z-index: 1;
+  width: 25vw;
+  height: auto;
+  /* position: relative; */
+
+  background-color: white;
+  box-shadow: 2px 2px 10px rgb(247, 203, 122);
+}
+#product-1 {
+  grid-area: crop;
+}
+#product-2 {
+  grid-area: vegetable;
+}
+
+#secondpart {
+  /* display: grid;
+  grid-template-areas: 
+  'crop vegetable'
+  ; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 2.5rem;
+  padding: 1.6rem;
+}
+.generalhd {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  font-size: 1.8rem;
+  margin: 0.7rem;
+}
+
+#product-1 {
+  animation: crop 1s ease-out 0.2s 1;
+  animation-direction: reverse;
+  animation-timing-function: inherit;
+  animation-play-state: running;
+}
+@keyframes crop {
+  25% {
+    opacity: 1;
+    /* transform: translateY(120px);  */
+  }
+  50% {
+    opacity: 0.15;
+    /* transform: translateY(60px);  */
+  }
+  75% {
+    opacity: 0.1;
+    /* transform: translateY(90px);  */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+}
+#product-2 {
+  animation: veges 1s ease-out 0.2s 1;
+  animation-direction: reverse;
+  animation-timing-function: inherit;
+  animation-play-state: running;
+}
+@keyframes veges {
+  25% {
+    opacity: 1;
+    /* transform: translateY(120px);  */
+  }
+  50% {
+    opacity: 0.15;
+    /* transform: translateY(60px);  */
+  }
+  75% {
+    opacity: 0.1;
+    /* transform: translateY(90px);  */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+}
+
+@media (max-width:600px) {
+  #secondpart{
+    flex-direction: column;
+  }
+  
+}
+@media (max-width:1070px) {
+  
+  #product-1, #product-2{
+    width: auto;
+  }
+  
+}
